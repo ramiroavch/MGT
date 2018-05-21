@@ -1,4 +1,4 @@
 
 document.getElementById("login_btn").onclick = function () {
-location.href = "app - copia.html";
+location.href = "Registro.html";
 }
