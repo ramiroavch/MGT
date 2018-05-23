@@ -7,7 +7,7 @@
   <!-- PAGE settings -->
   <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
   <title>App Aquamarine - Pingendo template</title>
-  <meta name="description" content="">
+  <meta name="description" content="Free Bootstrap 4 Pingendo Aquamarine template made for app and softwares.">
   <meta name="keywords" content="Pingendo app aquamarine free template bootstrap 4">
   <!-- CSS dependencies -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
@@ -16,6 +16,20 @@
   <script src="js/navbar-ontop.js"></script>
   <!-- Script: Animated entrance -->
   <script src="js/animate-in.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCyq91j_rQ5gEFShsxOz_CzG5L5cYTCr68",
+    authDomain: "mgt-db.firebaseapp.com",
+    databaseURL: "https://mgt-db.firebaseio.com",
+    projectId: "mgt-db",
+    storageBucket: "mgt-db.appspot.com",
+    messagingSenderId: "728781340778"
+  };
+  firebase.initializeApp(config);
+</script>
 </head>
 
 <body>
@@ -28,59 +42,19 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
-        <a class="btn navbar-btn text-white mx-2 btn-primary" href="#login">Login</a>
+        <a class="btn navbar-btn text-white mx-2 btn-primary" href="#login">Cancelar</a>
       </div>
     </div>
   </nav>
   <div class="py-5">
-    <div class="col-md-6 container">
+    <div class="col-md-6 container-center"><!--textos y botones-->
       <div class="row">
         <div class="col-md-12">
           <form class="">
-            <div class="form-group">
-              <label>
-                <b>Primer Nombre</b>
-              </label>
-              <input type="text" class="form-control" placeholder="Ingrese primer nombre">
-              <label>
-                <b>Segundo nombre Nombre</b>
-              </label>
-              <input type="text" class="form-control" placeholder="Ingrese segundo nombre">
-              <label>
-                <b>Primer Apellido</b>
-              </label>
-              <input type="text" class="form-control" placeholder="Ingrese primer apellido">
-              <label>
-                <b>Segundo Apellido</b>
-              </label>
-              <input type="text" class="form-control" placeholder="Ingrese segundo apellido">
-              <label>
-                <b>Empresa</b>
-              </label>
-              <input type="text" class="form-control" placeholder="Ingrese nombre de la empresa">
-              <label>
-                <b>Direccion</b>
-              </label>
-              <hr>
-              <label>
-                <b>Ciudad</b>
-              </label>
-              <input type="text" class="form-control" placeholder="Ingrese el nombre de la ciudad donde reside">
-              <label>
-                <b>Codigo postal</b>
-              </label>
-              <input type="number" class="form-control" placeholder="Ingrese el codigo postal">
-              <hr>
-              <label>
-                <b>Email</b>
-              </label>
-              <input type="email" class="form-control" placeholder="Ingrese su correo electronico">
-              <label>
-                <b>Password</b>
-              </label>
-              <input type="password" class="form-control" placeholder="Ingrese su contraseña"> </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <a class="nav-link text-center" href="#features">Ya tienes una cuenta?. Click aqui!</a>
+              <input type="user" class="form-control-log" id="user_txt" placeholder="Nombre de usuario">
+              <input type="password" class="form-control-log" id="pass_txt" placeholder="Contraseña">
+            <button type="button" class="btn-middle btn-primary row" onClick="Log_Click()" style="  margin-left: auto; margin-right: auto;">Iniciar Sesión</button>
+            <a class="nav-link3 text-center row" href="#features">Ya tienes una cuenta?. Click aqui!</a> </div>
           </form>
         </div>
       </div>
@@ -129,6 +103,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!-- Script: Smooth scrolling between anchors in the same page -->
   <script src="js/smooth-scroll.js"></script>
+  <script src="js/Login_script.js"></script>
 </body>
 
 </html>
