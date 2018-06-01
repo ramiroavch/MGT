@@ -1,0 +1,173 @@
+[debug] [2018-05-31T14:12:34.682Z] ----------------------------------------------------------------------
+[debug] [2018-05-31T14:12:34.682Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ramiro\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-05-31T14:12:34.682Z] CLI Version:   3.18.5
+[debug] [2018-05-31T14:12:34.682Z] Platform:      win32
+[debug] [2018-05-31T14:12:34.682Z] Node Version:  v8.11.2
+[debug] [2018-05-31T14:12:34.682Z] Time:          Thu May 31 2018 10:12:34 GMT-0400 (Hora estándar de Venezuela)
+[debug] [2018-05-31T14:12:34.682Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-31T14:12:34.692Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-05-31T14:12:34.702Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\xampp\htdocs\MGT
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-05-31T14:12:38.403Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Thu May 31 2018 10:12:38 GMT-0400 (Hora estándar de Venezuela)
+[debug] [2018-05-31T14:12:39.193Z] <<< HTTP RESPONSE 200
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2018-05-31T14:12:42.842Z] >>> HTTP REQUEST GET https://mgt-db.firebaseio.com/.settings/rules.json  
+  
+ Thu May 31 2018 10:12:42 GMT-0400 (Hora estándar de Venezuela)
+[debug] [2018-05-31T14:12:43.612Z] <<< HTTP RESPONSE 200
+[info] +  Database Rules for mgt-db have been downloaded to database.rules.json.
+[info] Future modifications to database.rules.json will update Database Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2018-05-31T14:12:48.333Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-05-31T14:12:48.333Z] > authorizing via signed-in user
+[debug] [2018-05-31T14:12:48.342Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-05-31T14:12:48.342Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/4NiWFzeJAa0nNTq_4muokKC0y1rvl_oNq5PBaBw31FA',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu May 31 2018 10:12:48 GMT-0400 (Hora estándar de Venezuela)
+[debug] [2018-05-31T14:12:48.742Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-31T14:12:48.802Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/mgt-db  
+  
+ Thu May 31 2018 10:12:48 GMT-0400 (Hora estándar de Venezuela)
+[debug] [2018-05-31T14:12:49.353Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-31T14:12:49.363Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/mgt-db/tokens  
+  
+ Thu May 31 2018 10:12:49 GMT-0400 (Hora estándar de Venezuela)
+[debug] [2018-05-31T14:12:49.923Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-31T14:12:49.932Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/mgt-db?updateMask=usageSettings  
+ { usageSettings: { consumerEnableStatus: 'ENABLED' } } 
+ Thu May 31 2018 10:12:49 GMT-0400 (Hora estándar de Venezuela)
+[debug] [2018-05-31T14:12:49.932Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/mgt-db?updateMask=usageSettings  
+ { usageSettings: { consumerEnableStatus: 'ENABLED' } } 
+ Thu May 31 2018 10:12:49 GMT-0400 (Hora estándar de Venezuela)
+[debug] [2018-05-31T14:12:51.672Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-31T14:12:51.672Z] <<< HTTP RESPONSE 200
+[info] +  Wrote functions/package.json
+[info] +  Wrote functions/.eslintrc.json
+[info] +  Wrote functions/index.js
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2018-05-31T14:18:02.062Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+  
+ Thu May 31 2018 10:18:02 GMT-0400 (Hora estándar de Venezuela)
+[debug] [2018-05-31T14:18:03.261Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-31T14:18:06.020Z] RangeError: Maximum call stack size exceeded
+    at normalizeStringWin32 (path.js:33:30)
+    at Object.resolve (path.js:328:20)
+    at mkdirsSync (C:\Users\Ramiro\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:19:12)
+    at mkdirsSync (C:\Users\Ramiro\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:27:16)
+    at mkdirsSync (C:\Users\Ramiro\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\Ramiro\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\Ramiro\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\Ramiro\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\Ramiro\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\Ramiro\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-05-31T14:18:19.625Z] ----------------------------------------------------------------------
+[debug] [2018-05-31T14:18:19.625Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ramiro\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-05-31T14:18:19.625Z] CLI Version:   3.18.5
+[debug] [2018-05-31T14:18:19.625Z] Platform:      win32
+[debug] [2018-05-31T14:18:19.625Z] Node Version:  v8.11.2
+[debug] [2018-05-31T14:18:19.625Z] Time:          Thu May 31 2018 10:18:19 GMT-0400 (Hora estándar de Venezuela)
+[debug] [2018-05-31T14:18:19.625Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-31T14:18:19.636Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-05-31T14:18:19.636Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\xampp\htdocs\MGT
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-05-31T14:18:22.399Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-05-31T14:18:22.399Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/4NiWFzeJAa0nNTq_4muokKC0y1rvl_oNq5PBaBw31FA',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu May 31 2018 10:18:22 GMT-0400 (Hora estándar de Venezuela)
+[debug] [2018-05-31T14:18:32.165Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-31T14:18:32.273Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Thu May 31 2018 10:18:32 GMT-0400 (Hora estándar de Venezuela)
+[debug] [2018-05-31T14:18:33.888Z] <<< HTTP RESPONSE 200
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
